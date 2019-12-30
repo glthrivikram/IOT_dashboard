@@ -1,4 +1,14 @@
 {% extends "base.html" %}
+{% block topnav %}
+  
+  <div class="topnav">
+    <a href="{% url 'home' %}">Home</a>
+    <a class="active" href="{% url 'newLocation' %}">New location</a>
+    <a href="{% url 'newData' %}">Add Data</a>
+    <a href="{% url 'liveStatus' %}">Live Status</a>
+    <br>
+  </div>
+{% endblock %}
 {% block content %}
 
     <form method="POST" action=""  >
